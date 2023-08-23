@@ -1,0 +1,125 @@
+{
+    "hashes": {
+        "checkpoint/v1-5-pruned-emaonly.safetensors": {
+            "mtime": 1692601514.8712335,
+            "sha256": "6ce0161689b3853acaa03779ec93eafe75a02f4ced659bee03f50797806fa2fa"
+        },
+        "checkpoint/person.safetensors": {
+            "mtime": 1688461846.9454129,
+            "sha256": "cb619e124de46d039a42f464547f00e48716fbd8c5ce880e48601e61279f4d0a"
+        },
+        "checkpoint/cartoon.ckpt": {
+            "mtime": 1687236707.2608416,
+            "sha256": "02e37aad9f74f574808ad456043b89e8c6b24e22828743fcf002168f76493d9b"
+        },
+        "checkpoint/openjourney_V4.ckpt": {
+            "mtime": 1687236707.2608416,
+            "sha256": "02e37aad9f74f574808ad456043b89e8c6b24e22828743fcf002168f76493d9b"
+        },
+        "checkpoint/iu_v35.safetensors": {
+            "mtime": 1687942272.0,
+            "sha256": "c9598ba3470c9529ba2bb386a0bf74bcdcac5e6c4efcfde70067755f3b76316a"
+        },
+        "hypernet/ducnh": {
+            "mtime": 1692243805.573445,
+            "sha256": "3a5b8c9d1f4e98f347102519619a122b8d244d3d3a2454572bb5517b37648221"
+        },
+        "hypernet/ducnh1": {
+            "mtime": 1692243892.879474,
+            "sha256": "2fc6446dc7dca100638baeb391b6184fc914745462e80ac11e7519ac3fa69df8"
+        },
+        "hypernet/ducnh2": {
+            "mtime": 1692246434.6399431,
+            "sha256": "f9be7ffabef062ab313dde5bfd1c874c40465503357b6b7b2bb83f3984ac89ea"
+        },
+        "hypernet/ducnh3": {
+            "mtime": 1692255241.4545128,
+            "sha256": "d4a1112e0cf4d867a687a798ba0b419d8b14cb1356f69b92eb5613348202f699"
+        },
+        "checkpoint/ducnh-1919.ckpt": {
+            "mtime": 1692243757.4483178,
+            "sha256": "558896bebccf0f3161a04ab8eaaf6a1c5015bc9d5991a7504542b1bea6df0eec"
+        },
+        "hypernet/ducnh4": {
+            "mtime": 1692327666.879012,
+            "sha256": "d847d885dcea977106bde97cb640fde7e7fc3321e0be439c7b15ac6650fd098b"
+        },
+        "hypernet/ducnh5": {
+            "mtime": 1692328351.6128113,
+            "sha256": "5a265b6cd119daf360a65fce75ec9f4c9bd9a034e60c4c7f463c9c149ed86b71"
+        },
+        "hypernet/ducnh6": {
+            "mtime": 1692328563.5585196,
+            "sha256": "d6876e716d342f004028c8615dff6095ead294a717bc7027d003c103d65d6eae"
+        },
+        "hypernet/ducnh7": {
+            "mtime": 1692328763.9359558,
+            "sha256": "147430322b7cd7d15aa20c633d44ac8085727ac229ecddf88d89256845e89cca"
+        },
+        "hypernet/ducnh8": {
+            "mtime": 1692340535.0092926,
+            "sha256": "967a2fb12324e412cadb8c28b79d870941a795b9b3608f078e89ea118217f336"
+        },
+        "hypernet/ducnh9": {
+            "mtime": 1692340811.5011108,
+            "sha256": "6581c4a331b19a2bec0bf3dc8e90f37435625222a69cce4fd6204a49892ab350"
+        },
+        "hypernet/tranthanh": {
+            "mtime": 1692343761.0411675,
+            "sha256": "fffa370ee8af05d42faa18bba85c1f7a27e16a24f5efda3c0475337411ac37b9"
+        },
+        "checkpoint/sd-v1-4.ckpt": {
+            "mtime": 1692071301.5826464,
+            "sha256": "fe4efff1e174c627256e44ec2991ba279b3816e364b49f9be2abc0b3ff3f8556"
+        },
+        "hypernet/day218": {
+            "mtime": 1692600969.048414,
+            "sha256": "8946a0a3f312dc574aa640c29cf9f8245b2a5a008902341869a8bec5660b4561"
+        },
+        "hypernet/v15": {
+            "mtime": 1692603806.2275407,
+            "sha256": "b01e4a16566d12a328a66d56ca0cbe7b64e5d175c578649da95e4fe40f256ee7"
+        },
+        "checkpoint/v15.safetensors": {
+            "mtime": 1692609014.010009,
+            "sha256": "19e22b367d9b622aa453ed4e05f8c50d10db001a1871bd8a1a40091eae2be31e"
+        },
+        "checkpoint/v15.ckpt": {
+            "mtime": 1692686324.7804453,
+            "sha256": "6ba0bfd94791ca0dd9d054a4cd6c2837b91707febb4e5514de755bb997556b2a"
+        },
+        "checkpoint/best.safetensors": {
+            "mtime": 1692765403.2888274,
+            "sha256": "6c5d1cbf15486994f455f504f5abaf42a686c9cb73cf54b7b34535a5c2197591"
+        }
+    },
+    "safetensors-metadata": {
+        "lora/iu_v35": {
+            "mtime": 1687942272.0,
+            "value": {}
+        }
+    },
+    "hashes-addnet": {},
+    "extensions-git": {
+        "sd-webui-additional-networks": {
+            "mtime": 1692678904.4399974,
+            "value": {
+                "remote": "https://github.com/kohya-ss/sd-webui-additional-networks.git",
+                "commit_date": 1684845075,
+                "branch": "main",
+                "commit_hash": "e9f3d622b5a98650008a685ea23b27eb810da35a",
+                "version": "e9f3d622"
+            }
+        },
+        "sd-webui-lora-block-weight": {
+            "mtime": 1692679310.6984158,
+            "value": {
+                "remote": "https://github.com/hako-mikan/sd-webui-lora-block-weight.git",
+                "commit_date": 1691660353,
+                "branch": "main",
+                "commit_hash": "3eba7323d60c12a0c4b4da50f5522d22ce11d02c",
+                "version": "3eba7323"
+            }
+        }
+    }
+}

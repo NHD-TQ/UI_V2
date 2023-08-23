@@ -1,0 +1,5 @@
+prompt,seed,width,height,sampler,cfgs,steps,filename,negative_prompt
+a photo of woman ,286493481,512,512,Euler a,7,20,00000-286493481.png,
+,2895014975,512,512,Euler a,7,20,00001-2895014975.png,
+,2895014975,512,512,Euler a,7,20,00002-2895014975.png,
+,2895014975,512,512,Euler a,7,20,00003-2895014975.png,
