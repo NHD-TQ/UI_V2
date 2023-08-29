@@ -26,9 +26,9 @@ from modules.shared import opts, cmd_opts
 
 generator = pipeline('text-generation', model = 'gpt2')
 
-def generate_text(txt):
+def generate_text(input):
     clean_results = []
-    for result in generator(txt, max_length = 100, num_return_sequences=1):
+    for result in generator(input, max_length = 100, num_return_sequences=1):
         clean_text = re.sub(r'[^a-zA-Z\s]', '', result['generated_text']).strip()  # Loại bỏ ký tự không phải chữ
         clean_results.append(clean_text)
         time.sleep(0.1)

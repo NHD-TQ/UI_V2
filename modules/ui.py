@@ -306,7 +306,7 @@ def create_toprow(is_img2img):
                     input_textbox = prompt
                     btn = gr.Button('Generate Prompt', variant='primary')
                     output_textbox = prompt
-                    btn.click(fn=Generate_Text, inputs=input_textbox, outputs=output_textbox)
+                    btn.click(fn=generate_text, inputs=input_textbox, outputs=output_textbox)
                     
             with gr.Row():
                 with gr.Column(scale=80):
@@ -1099,7 +1099,7 @@ def create_ui():
         input_textbox = gr.Image(elem_id="img2txt", label="Source", source="upload", interactive=True, type="pil")
         btn = gr.Button('Submit', variant='primary')
         output_textbox = gr.outputs.Textbox()
-        btn.click(fn=Img2Text, inputs=input_textbox, outputs=output_textbox)
+        btn.click(fn=img2text, inputs=input_textbox, outputs=output_textbox)
 
     with gr.Blocks(analytics_enabled=False) as Lora_interface:
  
