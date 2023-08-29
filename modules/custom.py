@@ -26,7 +26,7 @@ from modules.shared import opts, cmd_opts
 
 generator = pipeline('text-generation', model = 'gpt2')
 
-def Generate_Text(txt):
+def generate_text(txt):
     clean_results = []
     for result in generator(txt, max_length = 100, num_return_sequences=1):
         clean_text = re.sub(r'[^a-zA-Z\s]', '', result['generated_text']).strip()  # Loại bỏ ký tự không phải chữ
@@ -44,7 +44,7 @@ def open_train_lora():
 
    
 
-def Img2Text(input_textbox):
+def img2text(input_textbox):
     model = "nlpconnect/vit-gpt2-image-captioning"
     max_length = 16
     num_beams = 4

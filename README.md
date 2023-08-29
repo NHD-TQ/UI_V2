@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# StableDiffusion_UI
-=======
 # Stable Diffusion web UI
 A browser interface based on Gradio library for Stable Diffusion.
 
@@ -174,4 +171,3 @@ Licenses for borrowed code can be found in `Settings -> Licenses` screen, and al
 - LyCORIS - KohakuBlueleaf
 - Initial Gradio script - posted on 4chan by an Anonymous user. Thank you Anonymous user.
 - (You)
->>>>>>> 3f5d93bc (done)
