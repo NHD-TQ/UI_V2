@@ -5,7 +5,6 @@ import os
 import sys
 from functools import reduce
 import warnings
-import webbrowser
 
 import gradio as gr
 import gradio.utils
@@ -19,8 +18,11 @@ from modules.paths import script_path
 from modules.ui_common import create_refresh_button
 from modules.ui_gradio_extensions import reload_javascript
 
-
+import webbrowser
 from modules.shared import opts, cmd_opts
+
+from modules.custom import *
+
 
 import modules.codeformer_model
 import modules.generation_parameters_copypaste as parameters_copypaste
@@ -101,50 +103,9 @@ import time
 import requests
 # from transformers import BlipProcessor, BlipForConditionalGeneration
 from transformers import pipeline
-generator = pipeline('text-generation', model = 'gpt2')
-def txt2txt(txt):
-    clean_results = []
-    for result in generator(txt, max_length = 100, num_return_sequences=1):
-        clean_text = re.sub(r'[^a-zA-Z\s]', '', result['generated_text']).strip()  # Loại bỏ ký tự không phải chữ
-        clean_results.append(clean_text)
-        time.sleep(0.1)
-
-    clean_results = clean_results[0].replace("\n\n", ". ")
-    # res.append(sub.replace("\n", ""))
-
-    print(clean_results)
-
-    return clean_results
+# generator = pipeline('text-generation', model = 'gpt2')
 
 
-def open_website():
-    url = "http://0.0.0.0:7860/"
-    webbrowser.open(url)
-
-   
-
-def output(input_textbox):
-    model = "nlpconnect/vit-gpt2-image-captioning"
-    max_length = 16
-    num_beams = 4
-    gen_kwargs = {"max_length": max_length, "num_beams": num_beams}
-    
-
-    model = VisionEncoderDecoderModel.from_pretrained(model)
-    feature_extractor = ViTImageProcessor.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
-    tokenizer = AutoTokenizer.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
-
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model.to(device)
-    # images = await load_image_from_request(filename, device=device)
-    pixel_values = feature_extractor(images=input_textbox, return_tensors="pt").pixel_values
-    pixel_values = pixel_values.to(device)
-
-    output_ids = model.generate(pixel_values, **gen_kwargs)
-
-    preds = tokenizer.batch_decode(output_ids, skip_special_tokens=True)
-    preds = [pred.strip() for pred in preds]
-    return preds
 
 
 
@@ -345,7 +306,7 @@ def create_toprow(is_img2img):
                     input_textbox = prompt
                     btn = gr.Button('Generate Prompt', variant='primary')
                     output_textbox = prompt
-                    btn.click(fn=txt2txt, inputs=input_textbox, outputs=output_textbox)
+                    btn.click(fn=Generate_Text, inputs=input_textbox, outputs=output_textbox)
                     
             with gr.Row():
                 with gr.Column(scale=80):
@@ -480,17 +441,6 @@ def create_override_settings_dropdown(tabname, row):
 def create_ui():
     import modules.img2img
     import modules.txt2img
-    # with gr.Blocks(analytics_enabled=False) as pnginfo_interface:
-    # input_textbox = gr.Image(elem_id="pnginfo_image", label="Source", source="upload", interactive=True, type="pil")
-    # output_textbox = gr.outputs.Textbox()
-
-    # gr.Interface(
-    #     fn=output,
-    #     inputs=input_textbox,
-    #     outputs=output_textbox,
-    #     title="Khung Văn Bản Gradio",
-    #     description="Nhập văn bản vào khung và nhấn nút để xử lý.",
-    # ).launch()
 
 
     reload_javascript()
@@ -1147,17 +1097,15 @@ def create_ui():
 
     with gr.Blocks(analytics_enabled=False) as img2txt_interface:
         input_textbox = gr.Image(elem_id="img2txt", label="Source", source="upload", interactive=True, type="pil")
-        # btn = gr.Button("Submit")
-        # btn = gr.Button("Submit", bg="orange")
         btn = gr.Button('Submit', variant='primary')
         output_textbox = gr.outputs.Textbox()
-        btn.click(fn=output, inputs=input_textbox, outputs=output_textbox)
+        btn.click(fn=Img2Text, inputs=input_textbox, outputs=output_textbox)
 
     with gr.Blocks(analytics_enabled=False) as Lora_interface:
  
         btn = gr.Button('Begin training with Lora', variant='primary')
         # output_textbox = gr.outputs.Textbox()
-        btn.click(fn=open_website, inputs=None, outputs=None)
+        btn.click(fn=open_train_lora, inputs=None, outputs=None)
         
         
 

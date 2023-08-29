@@ -1,2 +1,2 @@
-a photo of manmade earthquakes in Nepal I want to try to use all that earthquakerelated knowledge he says. Mr Bhubaneswars team says the technology will help scientists to better understand that natural phenomena such as earthquakes are not only the result of natural phenomena but also of human actions not just of people on their knees feet and shoulders Even if you cannot measure a natural phenomenon as accurately as he can an earthquake is expected to do
-Steps: 20, Sampler: Euler a, CFG scale: 7, Seed: 723281876, Size: 512x512, Model hash: 6c5d1cbf15, Model: best, Version: v1.5.1
+a photo of man
+Steps: 20, Sampler: Euler a, CFG scale: 7, Seed: 2753367835, Size: 512x512, Model hash: 02e37aad9f, Model: openjourney_V4, ControlNet 0: "Module: none, Model: control_sd15_depth [fef5e48e], Weight: 1, Resize Mode: Crop and Resize, Low Vram: False, Guidance Start: 0.07, Guidance End: 1, Pixel Perfect: False, Control Mode: Balanced", Version: v1.5.1

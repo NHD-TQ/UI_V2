@@ -91,6 +91,14 @@
         "checkpoint/best.safetensors": {
             "mtime": 1692765403.2888274,
             "sha256": "6c5d1cbf15486994f455f504f5abaf42a686c9cb73cf54b7b34535a5c2197591"
+        },
+        "checkpoint/slg_v30.safetensors": {
+            "mtime": 1692953823.6286366,
+            "sha256": "bc53aecf455ec546177b1213a76df7dacaf81c1a03fa8b4cfd7a68dcac2dacbf"
+        },
+        "checkpoint/onlyrealistic_v30BakedVAE.safetensors": {
+            "mtime": 1692953911.1800718,
+            "sha256": "3955544523140404994a55d20c3ba23905831cb77696e7e4334222ef8d7224af"
         }
     },
     "safetensors-metadata": {
@@ -119,6 +127,36 @@
                 "branch": "main",
                 "commit_hash": "3eba7323d60c12a0c4b4da50f5522d22ce11d02c",
                 "version": "3eba7323"
+            }
+        },
+        "sd-webui-controlnet-fastload": {
+            "mtime": 1692947869.4210248,
+            "value": {
+                "remote": "https://github.com/pk5ls20/sd-webui-controlnet-fastload.git",
+                "commit_date": 1692570995,
+                "branch": "main",
+                "commit_hash": "1124b8f1ef43cd27bd5a13b93484527794310a62",
+                "version": "1124b8f1"
+            }
+        },
+        "ControlNet": {
+            "mtime": 1692948690.2725716,
+            "value": {
+                "remote": "https://github.com/lllyasviel/ControlNet.git",
+                "commit_date": 1682219622,
+                "branch": "main",
+                "commit_hash": "d3284fcd0972c510635a4f5abe2eeb71dc0de524",
+                "version": "d3284fcd"
+            }
+        },
+        "sd-webui-controlnet": {
+            "mtime": 1692949044.5791595,
+            "value": {
+                "remote": "https://github.com/Mikubill/sd-webui-controlnet.git",
+                "commit_date": 1692940097,
+                "branch": "main",
+                "commit_hash": "954515fcbf4818e416d33409cd0909d72e05a32a",
+                "version": "954515fc"
             }
         }
     }

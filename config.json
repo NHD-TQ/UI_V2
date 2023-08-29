@@ -76,7 +76,7 @@
     "training_enable_tensorboard": false,
     "training_tensorboard_save_images": false,
     "training_tensorboard_flush_every": 120,
-    "sd_model_checkpoint": "best.safetensors [6c5d1cbf15]",
+    "sd_model_checkpoint": "openjourney_V4.ckpt [02e37aad9f]",
     "sd_checkpoint_cache": 0,
     "sd_vae_checkpoint_cache": 0,
     "sd_vae": "Automatic",
@@ -200,10 +200,12 @@
     "postprocessing_operation_order": [],
     "upscaling_max_images_in_cache": 5,
     "disabled_extensions": [
+        "ControlNet",
         "sd-webui-additional-networks",
+        "sd-webui-controlnet-fastload",
         "sd-webui-lora-block-weight"
     ],
     "disable_all_extensions": "none",
     "restore_config_state_file": "",
-    "sd_checkpoint_hash": "6c5d1cbf15486994f455f504f5abaf42a686c9cb73cf54b7b34535a5c2197591"
+    "sd_checkpoint_hash": "02e37aad9f74f574808ad456043b89e8c6b24e22828743fcf002168f76493d9b"
 }
